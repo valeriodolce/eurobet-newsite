@@ -3,13 +3,30 @@ footer {
 	background-color: @color-base;
 	width: 100%;
 	margin: 0 auto;
-  	padding: 0;
 	color: @color-footer-text;
 	display: inline-block;
-}
-.aams{
+	p{
+			font-size: 11px;
+	}
+	.aams{
 	justify-content: space-between;
-	.aams_logos{
-		align-self: flex-end;
+	padding-top: 10px;
+		.aams_logos{
+			align-self: flex-end;
+		}
+	}
+	.cards_plus_legal{
+		flex-direction: column;
+	}
+	.social_plus_award{
+		justify-content: space-between;
+		p{
+			text-transform: uppercase;
+		}
+		.award{
+			img{
+				margin: 10px 10px 0 0;
+			}
+		}
 	}
 }
