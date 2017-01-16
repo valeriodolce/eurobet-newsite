@@ -2,18 +2,9 @@
   "name": "eurobet-newsite",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "modernizr": "~2.8.1"
-  },
-  "overrides": {
-    "bootstrap": {
-      "main": [
-        "less/bootstrap.less",
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js",
-        "dist/fonts/*"
-      ]
-    }
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -11,12 +11,13 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css">
+    <link rel="stylesheet" href="styles/general.css">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -27,40 +28,59 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">eurobet newsite</h3>
-      </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+  <!-- /* menu principale */ -->
+    <div class="box-menu">
+      <div class="navbar  navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Eurobet"></a>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+        <div class="navbar-offcanvas navmenu-fixed-left offcanvas">
+          <a class="navmenu-brand" href="#">Project name</a>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">SPORT</a></li>
+            <li><a href="#">LIVE</a></li>
+            <li><a href="#">VIRTUALI</a></li>
+            <li><a href="#">IPPICA</a></li>
+            <li><a href="#">VEGAS-LUXOR</a></li>
+            <li><a href="#">CASINò</a></li>
+            <li><a href="#">GIOCHI LIVE</a></li>
+            <li><a href="#">CLASSICI</a></li>
+            <li><a href="#">POKER</a></li>
+            <li><a href="#">BINGO</a></li>
+            <li><a href="#">LOTTERIE</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
+  <!-- /* fine menu principale */ -->
+
+  <!-- /* blocco login */ -->
+
+
+
+  <!-- /* fine blocco login */ -->
+    
+  <div class="container">  
+
+    
+
+    <div class="hero-unit">
+      <h1>'Allo, 'Allo!</h1>
+      <p>You now have</p>
+      <ul>
+        <li>Less</li>
+        <li>Modernizr</li>
+        <li>jQuery</li>
+      </ul>
+    </div>
+    
+  </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -76,9 +96,11 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap/js/affix.js"></script>
     <script src="/bower_components/bootstrap/js/alert.js"></script>
