@@ -1,0 +1,48 @@
+/* stile header */
+
+.navbar-header {
+	float: none;
+	background-color: @color-base;
+	min-height: 60px;
+}
+
+.navbar-default {
+	border-radius: 0;
+	border: none;
+	background-color: transparent;
+	.navbar-nav  {
+		font-size: 13px;
+		height:40px;
+
+		li {
+			padding-left: 10px;
+			padding-right: 10px;
+			&.active {
+				
+				a {
+					background-color: transparent;
+					padding-bottom: 5px;
+					color: @color-link-active;
+					border-bottom: 5px solid @color-link-active;
+					&:hover, :focus {
+						background-color: transparent;
+						color: @color-link-active;
+					}
+				}
+			}
+			a {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 15px;
+				padding-right: 15px;
+				color: @color-link-text;
+				text-transform: uppercase;
+				&:hover {
+					color: @color-link-active;
+					border-bottom: 5px solid @color-link-active;
+					padding-bottom: 5px;
+				}
+			}
+		}
+	}
+}
