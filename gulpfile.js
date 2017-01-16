@@ -138,6 +138,18 @@ gulp.task('serve:test', ['scripts'], () => {
   gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
 
+gulp.task('start:server', function() {
+  $.connect.server({
+    root: [yeoman.app, '.tmp'],
+    livereload: true,
+    // Change this to '0.0.0.0' to access the server from outside.
+    port: 9000,
+    middleware: function(connect) {
+        return [connect().use('/bower_components', connect.static('bower_components'))];
+    }
+  });
+});
+
 // inject bower components
 gulp.task('wiredep', () => {
   gulp.src('app/styles/*.less')
