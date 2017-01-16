@@ -7,6 +7,8 @@
     <title>eurobet newsite</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- JS per l'uso degli include-html -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -81,7 +83,10 @@
     </div>
     
   </div>
-    
+   
+  <!-- /* inizio footer */ -->
+  <div w3-include-html="footer.html"></div>
+  <!-- /* fine footer */ -->     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -97,7 +102,6 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
