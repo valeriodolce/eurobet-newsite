@@ -11,6 +11,18 @@
 			display: table-cell;
 			vertical-align: middle;
 			height: 60px;
+			::-webkit-input-placeholder { /* WebKit browsers */
+			    color:    white;
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			    color:    white;
+			}
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			    color:    white;
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10+ */
+			    color:    white;
+			}
 			.divisor {
 				border-right: #fff 1px solid;
 				margin: 0 5px;
@@ -23,11 +35,37 @@
 				margin: 0 5px;
 				border: 0;
 			}
+			input {
+				width: 180px;
+				background: @color-base;
+				border: rgba(255, 255, 255, 0.4) 1px solid;
+				color: white;
+			}
 			input:first-child {
 				margin-left: 0px;
 			}
 			button:last-child {
 				margin-right: 0px;
+			}
+		}
+		.box-lang {
+			display: inline-block;
+			border: rgba(255, 255, 255, 0.4) 1px solid;
+			padding: 2px 5px;
+			p {
+				display: inline-block;
+				color: white;
+				font-size: 12px;
+				margin: 0;
+			}
+			span {
+				color: rgba(255, 255, 255, 0.4);
+				padding: 0 3px 0 10px;
+			}
+			select {
+				border: 0;
+				background-color: @color-base;
+				color: white;
 			}
 		}
 	}
