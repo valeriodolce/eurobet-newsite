@@ -4,13 +4,23 @@
 @color-text-title:#24639e;
 
 #sitemap-footer{
+	margin-bottom:15px;
 	.row{
 		margin: 0;
 	}
+	.row div:first-child{
+		padding-left: 0;
+	}
+	.row div:nth-child(2){
+		padding-left: 0;
+		padding-right: 0;
+	}
 	h1{
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: bold;
 		color:@color-text-title;
+		border-top: 2px solid #ccc;
+    	padding-top: 10px;
 	}
 	ul{
 		margin: 0;
@@ -22,7 +32,7 @@
 		padding: 0;
 	}
 	p, a{
-		font-size: 16px;
+		font-size: 14px;
 		color:@color-text-base;
 	}
 	a{
@@ -30,8 +40,361 @@
 	}
 	.shopfinder-guide{ 
 		justify-content: space-between;
+		.shopfinder{
+			padding-right: 20px;
+		}
+		/*BOTTONI DA ELIMINARE?*/
+		.btn {
+			display: inline-block;
+			margin-bottom: 10px;
+			font-weight: normal;
+			text-align: center;
+			vertical-align: middle;
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+			cursor: pointer;
+			background-image: none;
+			border: none;
+			white-space: nowrap;
+			padding: 10px 20px;
+			font-size: 13px;
+			line-height: 1.42857143;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			border-radius: 0;
+			text-transform: uppercase;
+		}
+		.btn-default,
+.btn-primary,
+.btn-success,
+.btn-inactive,
+.btn-warning,
+.btn-danger {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: all 0.5s;
+}
+.btn-default:active,
+.btn-primary:active,
+.btn-success:active,
+.btn-inactive:active,
+.btn-warning:active,
+.btn-danger:active,
+.btn-default.active,
+.btn-primary.active,
+.btn-success.active,
+.btn-inactive.active,
+.btn-warning.active,
+.btn-danger.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-default.disabled,
+.btn-primary.disabled,
+.btn-success.disabled,
+.btn-inactive.disabled,
+.btn-warning.disabled,
+.btn-danger.disabled,
+.btn-default[disabled],
+.btn-primary[disabled],
+.btn-success[disabled],
+.btn-inactive[disabled],
+.btn-warning[disabled],
+.btn-danger[disabled],
+fieldset[disabled] .btn-default,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-success,
+fieldset[disabled] .btn-inactive,
+fieldset[disabled] .btn-warning,
+fieldset[disabled] .btn-danger {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-default .badge,
+.btn-primary .badge,
+.btn-success .badge,
+.btn-inactive .badge,
+.btn-warning .badge,
+.btn-danger .badge {
+  text-shadow: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+}
+.btn-default {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff24a85d', endColorstr='#ff197641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  background-color: #f9d34a;
+  color:#1f3b68;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #f7c719;
+  background-position: 0 -15px;
+}
+.btn-default:active,
+.btn-default.active {
+  background-color: #d6a907;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #197641;
+  background-image: none;
+}
+.btn-primary {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff24a85d', endColorstr='#ff197641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  background-color: #24a85d;
+  color:#fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #487e65;
+  background-position: 0 -15px;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #197641;
+  border-color: #176d3c;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #197641;
+  background-image: none;
+}
+.btn-success {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff24a85d', endColorstr='#ff197641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  background-color: #67917A;
+  color:#fff;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #3c6854;
+  background-position: 0 -15px;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #197641;
+  border-color: #176d3c;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #197641;
+  background-image: none;
+}
+.btn-inactive {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1f3b68', endColorstr='#ff112039', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    background-color: #e8e9ea;
+    color:#656a6e;
+    cursor:default;
+}
+/*.btn-inactive:hover,
+.btn-inactive:focus {
+  background-position: 0 -15px;
+  background-color: #bbb;
+}
+.btn-inactive:active,
+.btn-inactive.active {
+  border-color: #0f1c31;
+}*/
+.btn-inactive.disabled,
+.btn-inactive[disabled],
+fieldset[disabled] .btn-inactive,
+.btn-inactive.disabled:hover,
+.btn-inactive[disabled]:hover,
+fieldset[disabled] .btn-inactive:hover,
+.btn-inactive.disabled:focus,
+.btn-inactive[disabled]:focus,
+fieldset[disabled] .btn-inactive:focus,
+.btn-inactive.disabled.focus,
+.btn-inactive[disabled].focus,
+fieldset[disabled] .btn-inactive.focus,
+.btn-inactive.disabled:active,
+.btn-inactive[disabled]:active,
+fieldset[disabled] .btn-inactive:active,
+.btn-inactive.disabled.active,
+.btn-inactive[disabled].active,
+fieldset[disabled] .btn-inactive.active {
+  background-color: #112039;
+  background-image: none;
+}
+.btn-warning {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec5932', endColorstr='#ffce3a13', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  background-color:#ec5932;
+  color:#fff;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color:#d63f18;
+  background-position: 0 -15px;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #d63f18;
+}
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #ce3a13;
+  background-image: none;
+}
+.btn-danger {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec3232', endColorstr='#ffce1313', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  background-color:#bb2525;
+  color:#fff;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #a21c1c;
+  background-position: 0 -15px;
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #a21c1c;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled.focus,
+.btn-danger[disabled].focus,
+fieldset[disabled] .btn-danger.focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #ce1313;
+  background-image: none;
+}
+.btn-link {
+  color: #1f3b68;
+  font-weight: normal;
+  border-radius: 0;
+}
+.btn-link,
+.btn-link:active,
+.btn-link.active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: #0d1a2d;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:hover,
+.btn-link[disabled]:focus,
+fieldset[disabled] .btn-link:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+		/*FINE BOTTONE DA ELIMINARE?*/
+		.guide{
+			padding-right: 20px;
+		}
 	}
 	.contacts-promo{
 		justify-content: space-between;
+		.contacts{
+			padding-right: 20px;
+		}
+		.promo{
+			padding-right: 20px;
+		}
 	}
 }
