@@ -11,22 +11,39 @@
         <!-- /* blocco login */ -->
         <div class="box-login">
           <div class="login-items">
-            <div>
+            <!-- /* no log */ -->
+            <div class="no-log">
               <input type="text" name="username" placeholder="username">
               <input type="text" name="password" placeholder="password">
               <button type="button">Entra</button>
               <button type="button">Registrati</button>
-              <div class="box-lang">
-                <p>Scegli lingua</p>
-                <span>|</span>
-                <select>
-                  <option value="ita">ITA</option>
-                  <option value="en">EN</option>
-                  <option value="fr">FR</option>
-                </select>
-              </div>
+              <a class="recovery-log" href="#" target="_blank">username/password dimenticata</a>
             </div>
-              <a href="#" target="_blank">username/password dimenticata</a>
+            <!-- /* fine no-log */ -->
+
+            <!-- /* logged */ -->
+            <div class="logged">
+              <div>
+                <p>Mario Rossi <span>8890809</span></p>
+                <p>Ultimo accesso 19.01.17 del 10/05/2017</p>
+              </div>
+              <div>
+                <p>Saldo: <span>€ 90,15</span></p>
+                <p>Bonus: <span>€ 10,00</span></p>
+              </div>
+              <button type="button">Deposita</button>
+            </div>
+            <!-- /* fine logged */ -->
+
+            <div class="box-lang">
+              <p>Scegli lingua</p>
+              <span>|</span>
+              <select>
+                <option value="ita">ITA</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+            </div>
           </div>
         </div> 
         <!-- /* fine blocco login */ -->

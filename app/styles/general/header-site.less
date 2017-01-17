@@ -23,35 +23,57 @@
 			:-ms-input-placeholder { /* Internet Explorer 10+ */
 			    color:    white;
 			}
-			.divisor {
-				border-right: #fff 1px solid;
-				margin: 0 5px;
-				height: 27px;
-				display: inline-block;
-				vertical-align: middle;
-			}
-			button, input {
-				padding: 3px 25px;
-				margin: 0 5px;
-				border: 0;
-			}
-			input {
-				width: 180px;
-				background: @color-base;
-				border: rgba(255, 255, 255, 0.4) 1px solid;
+			.no-log {
+				display: none;
+				button, input {
+					padding: 3px 25px;
+					margin: 0 5px;
+					border: 0;
+				}
+				input {
+					width: 150px;
+					padding: 2px 25px;
+					background: @color-base;
+					border: rgba(255, 255, 255, 0.4) 1px solid;
+					color: white;
+				}
+				input:first-child {
+					margin-left: 0px;
+				}
+				.recovery-log {
 				color: white;
+				font-size: 11px;
+				display: block;
+				}
 			}
-			input:first-child {
-				margin-left: 0px;
-			}
-			button:last-child {
-				margin-right: 0px;
+			.logged {
+				display: inline-block;
+				p {
+					margin: 0 40px 0 0;
+					color: white;
+				}
+				div:nth-child(1) {
+					border-right: #fff 1px solid;
+					padding-right: 10px;
+					display: inline-block;
+				}
+				div:nth-child(2) {
+					padding-left: 10px;
+					display: inline-block;
+				}
+				button {
+					padding: 3px 25px;
+					margin: 0 5px;
+					border: 0;
+					vertical-align: top;
+				}
 			}
 		}
 		.box-lang {
 			display: inline-block;
 			border: rgba(255, 255, 255, 0.4) 1px solid;
 			padding: 2px 5px;
+			vertical-align: top;
 			p {
 				display: inline-block;
 				color: white;
@@ -76,7 +98,7 @@
 	border: none;
 	background-color: transparent;
 	.navbar-nav  {
-		font-size: 13px;
+		font-size: 14px;
 		height:40px;
 
 		li {
