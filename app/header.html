@@ -1,51 +1,81 @@
-<header class="header container-fluid">
-  <!-- /* inizio header top */ -->
-  <div class="header-top">
-    <div class="header-top-content row">
-      <img src="/images/logo.png" class="img-responsive" alt="Eurobet logo"/>
-      <!-- /* login e operatività */ -->
-      <div class="header-top-content-operations">
-        <input type="text" placeholder="Username" class="white-bordered"/>
-        <input type="password" placeholder="Password" class="white-bordered"/>
-        |
-        <button class="enter-button">ENTRA</button>
-        <button class="register-button">REGISTRATI</button>
-        |
-        Scegli lingua
-        <select class="white-bordered">
-          <option>ITA</option>
-        </select>
-        <span class="forgot-credentials">Username/Password dimenticata</span>
+<div id="header-wrapper">
+  <header class="header container-fluid">
+    <!-- /* inizio header top */ -->
+    <div class="header-top row">
+      <div class="header-top-content header-content-box">
+        <img class="main-logo" src="/images/logo.png" class="img-responsive" alt="Eurobet logo"/>
+        <span onclick="toggleSidebar()" style="color: white;"
+              class="glyphicon glyphicon-menu-hamburger burger-menu-trigger"></span>
+        <!-- /* login e operatività */ -->
+        <div class="header-top-content-operations">
+          <input type="text" placeholder="Username" class="white-bordered"/>
+          <input type="password" placeholder="Password" class="white-bordered"/>
+          <span class="pipe-separator"></span>
+          <button class="enter-button">ENTRA</button>
+          <button class="register-button">REGISTRATI</button>
+          <span class="pipe-separator"></span>
+          Scegli lingua
+          <select class="white-bordered">
+            <option>ITA</option>
+          </select>
+          <span class="forgot-credentials">Username/Password dimenticata</span>
+        </div>
+        <div class="header-top-content-schedina-container">
+          <button class="yellow-button promotions-button">SCHEDINA&nbsp;&nbsp;<span
+            class="glyphicon glyphicon-baby-formula"
+            aria-hidden="true"></span></button>
+          <button class="search-button">CERCA&nbsp;&nbsp;<span class="glyphicon glyphicon-search"
+                                                               aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- /* fine header top  */ -->
+    <!-- /* fine header top  */ -->
 
-  <!-- /* inizio header navigation */  -->
-  <div class="header-nav">
-    <nav class="header-nav-content row">
-      <ul>
-        <li class="active"><a href="#">SPORT</a></li>
-        <li><a href="#">LIVE</a></li>
-        <li><a href="#">VIRTUALI</a></li>
-        <li><a href="#">IPPICA</a></li>
-        <li><a href="#">VEGAS-LUXOR</a></li>
-        <li><a href="#">CASINO</a></li>
-        <li><a href="#">GIOCHI LIVE</a></li>
-        <li><a href="#">CLASSICI</a></li>
-        <li><a href="#">POKER</a></li>
-        <li><a href="#">BINGO</a></li>
-        <li><a href="#">LOTTERIA</a></li>
-      </ul>
-      <div class="button-container">
-        <button class="yellow-button promotions-button">PROMOZIONI&nbsp;&nbsp;<span
-          class="glyphicon glyphicon-star-empty"
-          aria-hidden="true"></span></button>
-        <button class="search-button">CERCA&nbsp;&nbsp;<span class="glyphicon glyphicon-search"
-                                                             aria-hidden="true"></span>
-        </button>
+    <!-- /* inizio header navigation */  -->
+    <div class="header-nav row">
+      <div class="header-nav-content header-content-box">
+        <nav>
+          <ul>
+            <li class="active"><a href="#">SPORT</a></li>
+            <li><a href="#">LIVE</a></li>
+            <li><a href="#">VIRTUALI</a></li>
+            <li><a href="#">IPPICA</a></li>
+            <li><a href="#">VEGAS-LUXOR</a></li>
+            <li><a href="#">CASINO</a></li>
+            <li><a href="#">GIOCHI LIVE</a></li>
+            <li><a href="#">CLASSICI</a></li>
+            <li><a href="#">POKER</a></li>
+            <li><a href="#">BINGO</a></li>
+            <li><a href="#">LOTTERIA</a></li>
+          </ul>
+        </nav>
+        <div class="button-container">
+          <button class="yellow-button promotions-button">PROMOZIONI&nbsp;&nbsp;<span
+            class="glyphicon glyphicon-star-empty"
+            aria-hidden="true"></span></button>
+          <button class="search-button">CERCA&nbsp;&nbsp;<span class="glyphicon glyphicon-search"
+                                                               aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </div>
+    <!-- /* fine header navigation */ -->
+  </header>
+</div>
+<div id="header-mobile-wrapper">
+  <div class="header-mobile">
+    <span onclick="toggleSidebar()" style="color: white;"
+          class="glyphicon glyphicon-menu-hamburger burger-menu-trigger"></span>
+    <img class="mobile-logo" src="/images/logo.png" class="img-responsive" alt="Eurobet logo"/>
+
+    <div class="header-top-content-schedina-container">
+      <button class="yellow-button promotions-button">SCHEDINA&nbsp;&nbsp;<span
+        class="glyphicon glyphicon-baby-formula"
+        aria-hidden="true"></span></button>
+      <button class="search-button">CERCA&nbsp;&nbsp;<span class="glyphicon glyphicon-search"
+                                                           aria-hidden="true"></span>
+      </button>
+    </div>
   </div>
-  <!-- /* fine header navigation */ -->
-</header>
+</div>

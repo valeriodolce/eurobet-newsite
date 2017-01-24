@@ -1,0 +1,35 @@
+@import (reference) "variabili.less";
+
+#wrapper {
+    padding-left: @sidebar_left;
+    transition: all .4s ease 0s;
+    height: 100%;
+    &.active {
+        padding-left: @sidebar_width;
+        #menu-mobile-wrapper {
+            left: @sidebar_width;
+        }
+    }
+}
+
+#menu-mobile-wrapper {
+    margin-left: -@sidebar_width;
+    left: @sidebar_left;
+    width: @sidebar_width;
+    background: @sidebar-wrappper-background;
+    position: fixed;
+    height: 100%;
+    z-index: 1000;
+    transition: all .4s ease 0s;
+}
+
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-height: 100vh;
+    .page-content {
+        min-height: 100vh;
+    }
+}
+
